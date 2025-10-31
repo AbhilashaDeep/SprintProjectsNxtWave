@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  color: #333;
+}
+
+#hint {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.word-display {
+  font-size: 28px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.input-area {
+  margin: 20px 0;
+}
+
+#letterInput {
+  padding: 10px;
+  font-size: 18px;
+  width: 120px;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 8px;
+  outline: none;
+}
+
+#letterInput:focus {
+  border-color: #f26a4f;
+}
+
+button {
+  background: #f26a4f;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+button:hover {
+  background: #e05b41;
+}
+
+.message {
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.guessed-letters {
+  color: #555;
+  font-size: 14px;
+  margin-top: 10px;
+}

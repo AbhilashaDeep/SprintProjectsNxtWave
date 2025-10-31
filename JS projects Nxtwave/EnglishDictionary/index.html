@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>English Dictionary</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="card" role="application" aria-label="English Dictionary">
+      <h1>English Dictionary</h1>
+
+      <div class="search-row" aria-hidden="false">
+        <input
+          id="searchInput"
+          placeholder="Type a word and press Enter or Search"
+          aria-label="Search word"
+        />
+        <button id="searchBtn" aria-label="Search">Search</button>
+      </div>
+      <div class="meta">
+        Word, phonetics, definitions & audio — powered by
+        <a href="https://dictionaryapi.dev/" target="_blank"
+          >dictionaryapi.dev</a
+        >
+      </div>
+
+      <div id="status" class="loading" style="display: none">
+        <div class="spinner" aria-hidden="true"></div>
+        <div class="muted-2">Looking up...</div>
+      </div>
+
+      <div
+        id="output"
+        class="result"
+        style="display: none"
+        aria-live="polite"
+      ></div>
+      <div id="error" class="error" style="display: none" role="alert"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

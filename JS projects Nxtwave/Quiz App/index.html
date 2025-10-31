@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizMaster Pro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="quiz-container" id="start-screen">
+      <h1>QuizMaster Pro</h1>
+      <p>
+        Test your knowledge and climb the ranks! Choose your difficulty and get
+        started.
+      </p>
+      <div class="difficulty">
+        <button class="btn easy" data-difficulty="easy">Easy Peasy</button>
+        <button class="btn medium" data-difficulty="medium">Medium Rare</button>
+        <button class="btn hard" data-difficulty="hard">Hard Boiled</button>
+      </div>
+      <button id="start-btn" class="btn start">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container hide" id="quiz-screen">
+      <div class="quiz-header">
+        <p id="difficulty-label"></p>
+        <div class="timer">⏱️ <span id="time">01:30</span></div>
+      </div>
+      <div id="progress-bar"></div>
+      <div id="question-container"></div>
+    </div>
+
+    <div class="quiz-container hide" id="result-screen">
+      <h2>Quiz Complete!</h2>
+      <p id="result-message">Good effort!</p>
+      <p id="score-text"></p>
+
+      <div id="high-score-section" class="hide">
+        <p>🎉 Congratulations! You made the high score list!</p>
+        <input type="text" id="username" placeholder="Enter your name" />
+        <button id="save-score" class="btn green">Save High Score</button>
+      </div>
+
+      <button id="play-again" class="btn blue">Play Again</button>
+      <button id="view-scores" class="btn purple">View High Scores</button>
+    </div>
+
+    <!-- High Score Modal -->
+    <div class="modal hide" id="highscore-modal">
+      <div class="modal-content">
+        <h3>🏆 High Scores</h3>
+        <ul id="highscore-list"></ul>
+        <button id="close-modal" class="btn">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
